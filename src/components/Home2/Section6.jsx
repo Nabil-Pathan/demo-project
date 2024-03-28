@@ -6,18 +6,18 @@ const Section6 = () => {
     return (
         <div className='flex md:flex-row md:mt-20 flex-col gap-4'>
 
-            <div className='bg-gray-300 rounded-3xl md:w-[30%] w-[100%]  '>
+            <div className='bg-gray-300 rounded-3xl h-full md:w-[30%] w-[100%]  '>
 
             </div>
 
 
-            <div className='md:w-[70%]'>
+            <div className='md:w-[70%] w-full'>
 
                 <div>
-                    <div className='bg-gray-300 md:p-6 p-8 rounded-3xl'>
-                        <h3 className='text-end text-xl font-medium'>Advanced Protect</h3>
+                    <div className='bg-gray-300 md:p-6 px-6 py-8 rounded-3xl'>
+                        <h3 className='text-end md:text-xl font-medium'>Advanced Protect</h3>
 
-                        <h1 className='text-end md:text-4xl text-2xl font-semibold'>Protecting your <br /> privacy Is our priority</h1>
+                        <h1 className='text-end md:text-4xl text-xl font-semibold'>Protecting your <br /> privacy Is our priority</h1>
                     </div>
 
 

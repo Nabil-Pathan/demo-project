@@ -6,18 +6,18 @@ const Section5 = () => {
 
 
         <div>
-            <h1 className='text-4xl font-medium'>45k+</h1>
-            <p className='mt-3'>Global Projects</p>
+            <h1 className='md:text-4xl text-2xl text-center font-medium'>45k+</h1>
+            <p className='mt-3 text-center'>Global Projects</p>
         </div>
 
         <div>
-            <h1 className='text-4xl font-medium'>45k+</h1>
-            <p className='mt-3'>Global Projects</p>
+            <h1 className='md:text-4xl text-2xl text-center font-medium'>45k+</h1>
+            <p className='mt-3 text-center'>Global Projects</p>
         </div>
 
         <div>
-            <h1 className='text-4xl font-medium'>45k+</h1>
-            <p className='mt-3'>Global Projects</p>
+            <h1 className='md:text-4xl text-2xl text-center font-medium'>45k+</h1>
+            <p className='mt-3 text-center'>Global Projects</p>
         </div>
 
 

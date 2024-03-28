@@ -2,7 +2,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import 'swiper/css'
-import Carousel from '../Extra/Carousel'
+import HomeCarousel from './HomeCarousel'
 
 const Section8 = () => {
     return (
@@ -13,7 +13,7 @@ const Section8 = () => {
                 clients our say </h1>
 
                 <div className='mt-10'>
-                <Carousel/>
+                <HomeCarousel/>
                 </div>
         </div>
     )

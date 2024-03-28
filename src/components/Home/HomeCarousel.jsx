@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import {  Pagination, Navigation } from 'swiper/modules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -22,31 +22,33 @@ import Vector6 from "../../images/Vector6.png"
 import Ellipse  from "../../images/Ellipse.png"
 import Ellipse2  from "../../images/Ellipse2.png"
 import Ellipse3 from "../../images/Ellipse3.png"
+import './styles.css'
 
 
-
-const Carousel = () => {
+const HomeCarousel = () => {
   return (
     <div className="container">
     <Swiper
-      
       grabCursor={true}
       centeredSlides={true}
-      loop={true}
-      slidesPerView={'auto'}
-      coverflowEffect={{
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2.5,
-      }}
+      spaceBetween={44}
+      slidesPerView={3}
       pagination={{ el: '.swiper-pagination', clickable: true }}
       navigation={{
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
         clickable: true,
       }}
-      modules={[EffectCoverflow, Pagination, Navigation]}
+
+      breakpoints={{
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+      }}
+      modules={[ Pagination, Navigation]}
       className="swiper_container"
     >
       <SwiperSlide>
@@ -59,22 +61,22 @@ const Carousel = () => {
              <h1 className=' '>Hannah Schmitt</h1>
              <p className=' '>Lead designer</p>
 
-             <p className='overflow-hidden text-sm w-[40%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu </p>
+             <p className='overflow-hidden text-sm w-[60%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu </p>
              </div>
         </div>
 
       </SwiperSlide>
       <SwiperSlide>
          <div className='relative'>
-             <img className='absolute  left-[50px] ' src={Vector4} alt="" />
-             <img className=' absolute  ' src={Vector3} alt="" />
+             <img className='absolute  left-[40px] ' src={Vector4} alt="" />
+             <img className=' absolute     ' src={Vector3} alt="" />
              <img className='absolute  top-4 left-32' src={Ellipse2} alt="" />
 
              <div className='absolute top-32 left-20 text-white'>
              <h1 className=' '>Hannah Schmitt</h1>
              <p className=' '>Lead designer</p>
 
-             <p className='overflow-hidden text-sm w-[40%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu </p>
+             <p className='overflow-hidden text-sm w-[60%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu </p>
              </div>
         </div>
       </SwiperSlide>
@@ -89,10 +91,28 @@ const Carousel = () => {
              <h1 className=' '>Hannah Schmitt</h1>
              <p className=' '>Lead designer</p>
 
-             <p className='overflow-hidden text-sm w-[40%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu </p>
+             <p className='overflow-hidden text-sm w-[60%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu </p>
              </div>
         </div>
       </SwiperSlide>
+
+
+      <SwiperSlide>
+        
+        <div className='relative'>
+               <img className='absolute left-[50px] md:h-[400px] h-[450px] top-8' src={Vector6} alt="" />
+               <img className=' absolute md:h-[400px] h-[450px]  ' src={Vector5} alt="" />
+               <img className='absolute  top-4 left-32' src={Ellipse3} alt="" />
+  
+               <div className='absolute top-28 left-20 text-white'>
+               <h1 className=' '>Hannah Schmitt</h1>
+               <p className=' '>Lead designer</p>
+  
+               <p className='overflow-hidden text-sm w-[60%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu </p>
+               </div>
+          </div>
+        </SwiperSlide>
+      
      
 
       <div className="slider-controler ">
@@ -104,9 +124,11 @@ const Carousel = () => {
         </div>
         <div className="swiper-pagination"></div>
       </div>
+
+      
     </Swiper>
   </div>
   )
 }
 
-export default Carousel
+export default HomeCarousel

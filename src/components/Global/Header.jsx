@@ -20,7 +20,7 @@ const Header = () => {
     let [open, setOpen] = useState(false);
 
     return (
-        <div className={` md:relative ${open ? "bg-white" : "bg-lightGray"}   w-full py-2 bottom-2  top-0 left-0`}>
+        <div className={` md:relative ${open ? "bg-white" : "bg-lightGray"} container mx-auto   w-full py-2 bottom-2  top-0 left-0`}>
             <div className='md:flex items-center justify-between  py-4 px-10'>
                 {/* logo section */}
                 <div className='font-medium text-xl cursor-pointer flex items-center gap-1'>
